@@ -1,6 +1,6 @@
 //Problem Link: https://rb.gy/ww91nx
 
-//code
+//code 
 public class Solution 
 {
 	public static ArrayList<ArrayList<Integer>> findTriplets(int[] arr, int n, int K)  
