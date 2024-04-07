@@ -5,7 +5,7 @@ class Solution
 {
     public boolean isAdditiveSequence(String s) 
     {
-        int first = 0;
+        int first = 0 ;
         int n = s.length();
         for(int i = 0 ; i < n - 2 ; i++)
         {
