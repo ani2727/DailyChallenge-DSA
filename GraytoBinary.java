@@ -25,3 +25,11 @@ class Solution
         return ans;
     }      
 }
+
+//Approach-2
+int mask;
+for (mask = n >> 1; mask != 0; mask = mask >> 1) 
+{
+    n = n ^ mask;
+}
+return n;
