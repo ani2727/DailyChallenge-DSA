@@ -5,21 +5,22 @@ class Solution
 {
    Node delete(Node head, int k)
     {
-        if(k <= 1 || head == null) return null;
-        
-        Node ans = head;
-        int ct = 0;
-        while(head != null)
+        int m = 1;
+        Node prev = null;
+        Node temp = head;
+        if(k <= 1) return null;
+        while(temp != null)
         {
-            ct ++;
-            
-            if(ct%k == 0)
+            if(m%k == 0)
             {
-                head.next = head.next.next;
+                prev.next = temp.next;
             }
-            head = head.next;
+            
+            m ++;
+            prev = temp;
+            temp = temp.next;
         }
         
-        return ans;
+        return head;
     }
 }
